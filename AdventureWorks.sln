@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.7
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "AdventureWorks.Database", "AdventureWorks.Database\AdventureWorks.Database.sqlproj", "{8F7CF18B-4192-4B21-87C0-3D17749296DC}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "AdventureWorks.Database.Migration", "AdventureWorks.Database.Migration\AdventureWorks.Database.Migration.sqlproj", "{34F8CE37-8132-4C3D-881F-5767A7D0B580}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8F7CF18B-4192-4B21-87C0-3D17749296DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F7CF18B-4192-4B21-87C0-3D17749296DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F7CF18B-4192-4B21-87C0-3D17749296DC}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{8F7CF18B-4192-4B21-87C0-3D17749296DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F7CF18B-4192-4B21-87C0-3D17749296DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F7CF18B-4192-4B21-87C0-3D17749296DC}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{34F8CE37-8132-4C3D-881F-5767A7D0B580}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34F8CE37-8132-4C3D-881F-5767A7D0B580}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34F8CE37-8132-4C3D-881F-5767A7D0B580}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{34F8CE37-8132-4C3D-881F-5767A7D0B580}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34F8CE37-8132-4C3D-881F-5767A7D0B580}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34F8CE37-8132-4C3D-881F-5767A7D0B580}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
