@@ -89,6 +89,9 @@
     <Folder Include="Sales\XMLSchemaCollections\" />
     <Folder Include="0.Scripts" />
     <Folder Include="0.Scripts\PostDeployment" />
+    <Folder Include="internal" />
+    <Folder Include="internal\Tables" />
+    <Folder Include="internal\Stored Procedures" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Production\Tables\ScrapReason.sql" />
@@ -224,6 +227,9 @@
     <Build Include="Production\XMLSchemaCollections\ProductDescriptionSchemaCollection.sql" />
     <Build Include="Sales\XMLSchemaCollections\StoreSurveySchemaCollection.sql" />
     <Build Include="ExtendedProperties.sql" />
+    <Build Include="internal\internal.sql" />
+    <Build Include="internal\Tables\DatabaseVersion.sql" />
+    <Build Include="internal\Stored Procedures\CreateDatabaseVersion.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="0.Scripts\Script.PostDeployment.sql" />
@@ -232,5 +238,6 @@
     <None Include="0.Scripts\PostDeployment\Person.AddressType.sql" />
     <None Include="0.Scripts\PostDeployment\Person.ContactType.sql" />
     <None Include="0.Scripts\PostDeployment\Person.PhoneNumberType.sql" />
+    <None Include="0.Scripts\PostDeployment\internal.DatabaseVersion.sql" />
   </ItemGroup>
 </Project>
