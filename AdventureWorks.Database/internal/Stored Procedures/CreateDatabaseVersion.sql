@@ -7,7 +7,7 @@
 -- </summary>
 --------------------------------------------------------------------------------------------------------------------
 
-CREATE PROCEDURE [dbo].[UspCreateDatabaseVersion]
+CREATE PROCEDURE [internal].[UspCreateDatabaseVersion]
     (
       @id INT ,
       @major INT ,
