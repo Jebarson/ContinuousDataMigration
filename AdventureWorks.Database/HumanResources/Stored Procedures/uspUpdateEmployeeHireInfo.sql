@@ -6,7 +6,8 @@ CREATE PROCEDURE [HumanResources].[uspUpdateEmployeeHireInfo]
     @RateChangeDate [datetime], 
     @Rate [money], 
     @PayFrequency [tinyint], 
-    @CurrentFlag [dbo].[Flag] 
+    @CurrentFlag [dbo].[Flag],
+	@IsEmployee BIT
 WITH EXECUTE AS CALLER
 AS
 BEGIN
@@ -19,6 +20,7 @@ BEGIN
         SET [JobTitle] = @JobTitle 
             ,[HireDate] = @HireDate 
             ,[CurrentFlag] = @CurrentFlag 
+			,[IsEmployee] = @IsEmployee
         WHERE [BusinessEntityID] = @BusinessEntityID;
 
         INSERT INTO [HumanResources].[EmployeePayHistory] 

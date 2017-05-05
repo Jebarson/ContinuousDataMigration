@@ -5,6 +5,7 @@
     [OrganizationNode]  [sys].[hierarchyid] NULL,
     [OrganizationLevel] AS                  ([OrganizationNode].[GetLevel]()),
     [JobTitle]          NVARCHAR (50)       NOT NULL,
+	[IsEmployee]		BIT					CONSTRAINT [DF_Employee_IsEmployee] DEFAULT(0) NOT NULL,
     [BirthDate]         DATE                NOT NULL,
     [MaritalStatus]     NCHAR (1)           NOT NULL,
     [Gender]            NCHAR (1)           NOT NULL,
