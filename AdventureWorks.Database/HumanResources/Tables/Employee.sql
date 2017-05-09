@@ -5,7 +5,7 @@
     [OrganizationNode]  [sys].[hierarchyid] NULL,
     [OrganizationLevel] AS                  ([OrganizationNode].[GetLevel]()),
     [JobTitle]          NVARCHAR (50)       NOT NULL,
-	[IsEmployee]		BIT					CONSTRAINT [DF_Employee_IsEmployee] DEFAULT(0) NOT NULL,
+	[EmployeeTypeID]	INT					NOT NULL,
     [BirthDate]         DATE                NOT NULL,
     [MaritalStatus]     NCHAR (1)           NOT NULL,
     [Gender]            NCHAR (1)           NOT NULL,
@@ -23,7 +23,8 @@
     CONSTRAINT [CK_Employee_MaritalStatus] CHECK (upper([MaritalStatus])='S' OR upper([MaritalStatus])='M'),
     CONSTRAINT [CK_Employee_SickLeaveHours] CHECK ([SickLeaveHours]>=(0) AND [SickLeaveHours]<=(120)),
     CONSTRAINT [CK_Employee_VacationHours] CHECK ([VacationHours]>=(-40) AND [VacationHours]<=(240)),
-    CONSTRAINT [FK_Employee_Person_BusinessEntityID] FOREIGN KEY ([BusinessEntityID]) REFERENCES [Person].[Person] ([BusinessEntityID])
+    CONSTRAINT [FK_Employee_Person_BusinessEntityID] FOREIGN KEY ([BusinessEntityID]) REFERENCES [Person].[Person] ([BusinessEntityID]),
+	CONSTRAINT [FK_Employee_EmployeeType_EmployeeTypeID] FOREIGN KEY ([EmployeeTypeID]) REFERENCES [HumanResources].[EmployeeType](EmployeeTypeID)
 );
 
 

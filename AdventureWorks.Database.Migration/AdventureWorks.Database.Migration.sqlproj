@@ -60,6 +60,7 @@
     <Folder Include="Scripts" />
     <Folder Include="Scripts\Migration" />
     <Folder Include="Scripts\Migration\V11" />
+    <Folder Include="Scripts\Migration\V12" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Script.PostDeployment.sql" />
@@ -67,5 +68,6 @@
   <ItemGroup>
     <None Include="Scripts\Migration\V11\SchemaChangeScript.sql" />
     <None Include="Scripts\Migration\V11\DataChangeScript.sql" />
+    <None Include="Scripts\Migration\V12\SchemaChangeScript.sql" />
   </ItemGroup>
 </Project>

@@ -230,6 +230,7 @@
     <Build Include="internal\internal.sql" />
     <Build Include="internal\Tables\DatabaseVersion.sql" />
     <Build Include="internal\Stored Procedures\CreateDatabaseVersion.sql" />
+    <Build Include="HumanResources\Tables\EmployeeType.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="0.Scripts\Script.PostDeployment.sql" />
@@ -239,5 +240,6 @@
     <None Include="0.Scripts\PostDeployment\Person.ContactType.sql" />
     <None Include="0.Scripts\PostDeployment\Person.PhoneNumberType.sql" />
     <None Include="0.Scripts\PostDeployment\internal.DatabaseVersion.sql" />
+    <None Include="0.Scripts\PostDeployment\HumanResources.EmployeeType.sql" />
   </ItemGroup>
 </Project>

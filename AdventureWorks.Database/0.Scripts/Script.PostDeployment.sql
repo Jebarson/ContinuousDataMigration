@@ -12,5 +12,6 @@ Post-Deployment Script Template
 :r .\PostDeployment\Person.AddressType.sql
 :r .\PostDeployment\Person.ContactType.sql
 :r .\PostDeployment\Person.PhoneNumberType.sql
+:r .\PostDeployment\HumanResources.EmployeeType.sql
 
 :r .\PostDeployment\internal.DatabaseVersion.sql
