@@ -606,10 +606,6 @@ EXEC sp_addextendedproperty N'MS_Description', N'Unique nonclustered index.', 'S
 
 IF @@ERROR <> 0 SET NOEXEC ON
 
-EXEC sp_addextendedproperty N'MS_Description', N'INSTEAD OF DELETE trigger which keeps Employees from being deleted.', 'SCHEMA', N'HumanResources', 'TABLE', N'Employee', 'TRIGGER', N'dEmployee'
-
-IF @@ERROR <> 0 SET NOEXEC ON
-
 COMMIT TRANSACTION
 
 IF @@ERROR <> 0 SET NOEXEC ON

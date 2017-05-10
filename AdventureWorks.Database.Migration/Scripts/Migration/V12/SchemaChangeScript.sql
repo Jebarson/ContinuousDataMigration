@@ -195,7 +195,10 @@ IF @@ERROR <> 0
 
 PRINT N'Dropping trigger [HumanResources].[dEmployee] from [HumanResources].[Employee]';
 
-DROP TRIGGER [HumanResources].[dEmployee];
+IF OBJECTPROPERTY(OBJECT_ID('[HumanResources].[dEmployee]'), 'IsTrigger') = 1
+    BEGIN
+        DROP TRIGGER [HumanResources].[dEmployee];
+    END;
 
 IF @@ERROR <> 0
     SET NOEXEC ON;
@@ -245,7 +248,7 @@ ON  [PRIMARY];
 IF @@ERROR <> 0
     SET NOEXEC ON;
 
-INSERT  INTO [HumanResources].[RG_Recovery_1_Employee]
+EXEC sp_executesql N'INSERT  INTO [HumanResources].[RG_Recovery_1_Employee]
         ( [BusinessEntityID] ,
           [NationalIDNumber] ,
           [LoginID] ,
@@ -281,7 +284,7 @@ INSERT  INTO [HumanResources].[RG_Recovery_1_Employee]
                 [CurrentFlag] ,
                 [rowguid] ,
                 [ModifiedDate]
-        FROM    [HumanResources].[Employee];
+        FROM    [HumanResources].[Employee];';
 
 IF @@ERROR <> 0
     SET NOEXEC ON;
