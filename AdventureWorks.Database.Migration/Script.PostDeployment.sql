@@ -31,4 +31,4 @@ EXEC [internal].[UspCreateDatabaseVersion] @id = 2, @major = 1, @minor = 1, @bui
 Version12:
 :r .\Scripts\Migration\V12\SchemaChangeScript.sql
 
-EXEC [internal].[UspCreateDatabaseVersion] @id = 3, @major = 1, @minor = 2, @build = 0896, @revision = 124
+EXEC [internal].[UspCreateDatabaseVersion] @id = 3, @major = 1, @minor = 2, @build = 0414, @revision = 096
